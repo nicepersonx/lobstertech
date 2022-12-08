@@ -37,7 +37,7 @@ print(""""######################################################################
 ##########################################%%%#######################################################""".replace('@',pink+"@"+black).replace('%',pink+'%'+black))
 
 while 1:
-    # if keyboard.is_pressed('space') == True:
+    # if win32api.GetKeyState(0x20) == -127 or win32api.GetKeyState(0x20) == -128:
     #     response = requests.get("https://127.0.0.1:2999/liveclientdata/activeplayer", verify=False)
     #     attackspeed = float((response.json()['championStats']['attackSpeed']))
     #     windup = 0.032
@@ -72,7 +72,7 @@ while 1:
     #     if keyboard.is_pressed('space') == False:
     #         keyboard.release('c')
 
-    if keyboard.is_pressed('space') == True:
+    if win32api.GetKeyState(0x20) == -127 or win32api.GetKeyState(0x20) == -128:
         response = requests.get("https://127.0.0.1:2999/liveclientdata/activeplayer", verify=False)
         attackspeed = float((response.json()['championStats']['attackSpeed']))
         windup = 0.032
