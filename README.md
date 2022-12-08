@@ -19,7 +19,7 @@ The main module is just groundclick kiting.
 Be in a league game and hold down space to activate.
 ```
 
-##Configuration:
+## Configuration:
 ```
 Set your avearage ping as the ping variable
 The lower the movefactor, the less you move between attacks (looks cooler on high attack speed but I'd keep in on 0.9 for practical use)
