@@ -1,6 +1,5 @@
 import keyboard
 import win32api, win32con
-import time
 import colored
 import requests
 import time
